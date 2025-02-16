@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+.active{
+  color: #1677BD;
+  position: relative;
+}
+
+
+  .active::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0; 
+  background-color: #1677BD;
+}
