@@ -21,7 +21,7 @@ function Feedback() {
               <p className="text-[14px] mt-[20px] text-[#5E5E5E]">
                 {items.para}
               </p>
-              <button className="bg-black text-white px-10 p-2 rounded-full mt-10">{items.button}</button>
+              <button className="bg-black text-white px-5 p-2 rounded-full mt-10">{items.button}</button>
             </div>
             {/* right */}
             <div>

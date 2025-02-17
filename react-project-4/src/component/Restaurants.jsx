@@ -1,6 +1,7 @@
 import NavLast from "./secondnav"; 
 import Frend from "./frend";
 import Feedback from "./feedback";
+import Avtivities from "./avtivities";
 function Restaurants() {
   const findResturent = [
     {
@@ -46,10 +47,10 @@ function Restaurants() {
         </h1>
         <div className="bg-[#1677BD] mt-6 flex justify-around  rounded-2xl container mx-1">
           {/* left button */}
-          <button className="bg-[#FFFFFF99] h-14 top-44 bottom-44 absolute left-2 p-3 rounded-full hover:bg-amber-100 z-10">
+          <button className="bg-[#FFFFFF99] h-14 top-44 bottom-44 absolute left-2 p-3 rounded-full hover:bg-amber-100 z-10 hidden lg:flex">
             <img className="" src="left.png" alt="" />
           </button>
-          <div className="flex rounded-2xl gap-5 mx-3 bg-[#1677BD]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 rounded-2xl gap-5 mx-3 bg-[#1677BD]">
             {findResturent.map((items, index) => (
               <div key={index} className="gap-4">
                 <div className="relative">
@@ -61,7 +62,7 @@ function Restaurants() {
                     <button className="w-2 h-2 rounded-full bg-white"></button>
                   </div>
                 </div>
-                <div className="bg-white rounded-2xl px-2 mt-[-20px] pt-5">
+                <div className="bg-white rounded-2xl px-2 lg:mt-[-20px] pt-5 mr-24 md:mr-10 lg:mr-0">
                   <h1 className="text-xl font-semibold">{items.headers}</h1>
                   <p className="text-xs text-[#8F8F8F] leading-3.5">
                     {items.paragraps}
@@ -75,18 +76,19 @@ function Restaurants() {
             ))}
           </div>
           {/* right button */}
-          <button className="bg-[#FFFFFF99] p-3 rounded-full h-14 top-44 bottom-44 absolute right-2 hover:bg-amber-100">
+          <button className="bg-[#FFFFFF99] p-3 rounded-full h-14 top-44 bottom-44 absolute right-2 hover:bg-amber-100 hidden lg:flex">
             <img src="right.png" alt="" />
           </button>
         </div>
         {/* small button */}
-        <div className="flex mx-auto gap-1 mt-3 justify-center">
+        <div className="flex mx-auto gap-1 mt-3 justify-center hidden lg:flex">
           <button className="w-2 h-2 rounded-full bg-white"></button>
           <button className="w-2 h-2 rounded-full bg-white"></button>
         </div>
       </div>
       <Frend />
       <Feedback />
+      <Avtivities />
     </div>
   );
 }
