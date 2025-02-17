@@ -1,4 +1,6 @@
-import NavLast from "./secondnav";
+import NavLast from "./secondnav"; 
+import Frend from "./frend";
+import Feedback from "./feedback";
 function Restaurants() {
   const findResturent = [
     {
@@ -83,6 +85,8 @@ function Restaurants() {
           <button className="w-2 h-2 rounded-full bg-white"></button>
         </div>
       </div>
+      <Frend />
+      <Feedback />
     </div>
   );
 }

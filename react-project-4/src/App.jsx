@@ -7,9 +7,8 @@ function App() {
     <BrowserRouter>
       <Navbars />
       <Routes>
-        
-        <Route path="/All" element={<All />} />
-        <Route path="/" element={<Restaurants />} />
+        <Route path="" element={<All />} />
+        <Route path="/Restaurants" element={<Restaurants />} />
       </Routes>
     </BrowserRouter>
   );

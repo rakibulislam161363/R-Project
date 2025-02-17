@@ -6,7 +6,7 @@ function NavLast() {
       {
         img: 'one.png',
         title: 'All',
-        link: '/All',
+        link: '/',
       },
       {
         img: 'two.png',
