@@ -1,6 +1,6 @@
 
 
-
+// footer section
 
 const footeritem = {
   itemss: [
